@@ -43,18 +43,34 @@ function myKeyDown(e) {
     console.log(keyPressed);
     if(keyPressed == 37) {
         Car1Left();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 40) {
         Car1Down();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 39) {
         Car1Right();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 38) {
         Car1Up();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 }
 
