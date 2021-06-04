@@ -41,70 +41,50 @@ window.addEventListener("keydown", myKeyDown)
 function myKeyDown(e) {
     keyPressed = e.keyCode;
     console.log(keyPressed);
+    console.log(car_1_X);
+    console.log(car_2_X);
     if(keyPressed == 37) {
         Car1Left();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 40) {
         Car1Down();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
+    }
+    
+    if(car_1_X >= 650) {
+        console.log("Car 1 has won");
+        document.getElementById("GameStatus").innerHTML = "Car 1 Won !!";
+    } else if(car_2_X >= 650) {
+        console.log("Car 2 has won");
+        document.getElementById("GameStatus").innerHTML = "Car 2 Won !!";
     }
 
     if(keyPressed == 39) {
         Car1Right();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 38) {
         Car1Up();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 65) {
         Car2Left();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 83) {
         Car2Down();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 68) {
         Car2Right();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
     }
 
     if(keyPressed == 87) {
         Car2Up();
-        if (car_1_X > 700) {
-            console.log("Car 1 has won")
-            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
-        }
+        
     }
 }
+
 
 // Start of coding for Car 1 //
 
