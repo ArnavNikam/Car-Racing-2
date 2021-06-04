@@ -72,25 +72,37 @@ function myKeyDown(e) {
             document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
         }
     }
-}
 
-function myAlfDown(e) {
-    keyPressed = e.keyCode;
-    console.log(keyPressed);
     if(keyPressed == 65) {
         Car2Left();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 83) {
         Car2Down();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 68) {
         Car2Right();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 
     if(keyPressed == 87) {
         Car2Up();
+        if (car_1_X > 700) {
+            console.log("Car 1 has won")
+            document.getElementById("GameStatus").innerHTML = "Car 1 Won !!"
+        }
     }
 }
 
